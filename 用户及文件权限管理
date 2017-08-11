@@ -1,0 +1,39 @@
+查看用户：
+  who命令
+  who am i 或 who mom likes
+  其他参数-a，-d，-m，-q，-u，-r
+
+创建用户
+  在Linux系统里，root账户拥有整个系统至高无上的权利，比如 新建/添加用户
+  su su- sudo
+  su <user> su- <user> sudo <cmd>
+  e.g. sudo adduser zzx
+  e.g. su -l zzx//切换用户至zzx
+
+用户组
+  groups命令
+  查看/etc/group文件
+    cat /etc/group | sort
+    记录格式：group_name:password:GID:user_list
+  suermod命令为用户添加用户组，要有root权限：sudo usermod -G sudo zzx
+
+删除用户
+  sudo deluser zzx --remove-home
+
+文件权限
+ 查看：ls -l
+ ls -A
+ ls _dl<目录名>
+ ls -AsSh
+ 
+ 变更文件所有者
+  touch file//创建文件file
+  sudo chown zzx file//将所有者改为zzx
+  
+ 修改文件权限
+    chmod 700 zzx//方式一，拥有者 所属用户组，其他用户,二进制法
+    chmod go-rw iphone6//方式二g-groups,o-others,u-users,-/+法
+
+
+  
+  
