@@ -2,4 +2,18 @@
 
 终端模拟器terminal:切换命令：ctrl+Alt+F1~F6
 
+UNIX/Linux操作系统下的Shell既是用户交互的界面，也是控制系统的脚本语言。
 
+在UNIX/Linux中比较流行的Shell有bash,zsh,ksh,csh等等
+
+touch //创建一个文件
+cd / //进入一个目录
+pwd //查看当前所在目录
+
+通配符：
+    * ? [list] [!list] [c1-c2] {string1,string2,...} {c1..c2}
+
+man命令 Manual pages的缩写
+    手册通常分为8个区段
+
+banner命令，输出图形字符
